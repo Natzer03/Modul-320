@@ -1,9 +1,8 @@
 import java.util.Scanner;
-
-public class auftrag01 {
+public class exercise1 {
     static Scanner myScanner = new Scanner(System.in);
     public static void main(String[] args) {
-        double counter = 0;
+        double accountBalance = 0;
         int amount;
         System.out.println("Welcome to the account application");
         boolean decision = false;
@@ -13,19 +12,18 @@ public class auftrag01 {
             if (amount == 0){
                 decision = true;
             }
-            if (decision == true){
+            if (decision){
                 break;
             }
             System.out.println("To deposit, press +, to withdraw, press -");
             String methode = myScanner.next();
             if (methode.equals("+")){
-                counter+=amount;
+                accountBalance+=amount;
             }
             else {
-                counter-=amount;
+                accountBalance-=amount;
             }
-
         }
-        System.out.println("Final balance: "+counter);
+        System.out.println("Final balance: "+accountBalance);
     }
 }
