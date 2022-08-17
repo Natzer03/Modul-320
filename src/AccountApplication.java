@@ -4,7 +4,7 @@ public class AccountApplication {
     static Scanner myScanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Account lohnkonto = new Account();
+        Account wage_account = new Account();
         System.out.println("Welcome to the account application");
         int amount;
         do {
@@ -14,21 +14,13 @@ public class AccountApplication {
                 System.out.println("To deposit, press +, to withdraw, press -");
                 String methode = myScanner.next();
                 switch (methode) {
-                    case "+":
-                        lohnkonto.deposit(amount);
-                        break;
-                    case "-":
-                        lohnkonto.withdraw(amount);
-                        break;
-                    case "=":
-                        System.out.println(lohnkonto.getBalance());
-                        break;
-                    default:
-                        System.out.println("This methode is not available");
-                        break;
+                    case "+" -> wage_account.deposit(amount);
+                    case "-" -> wage_account.withdraw(amount);
+                    case "=" -> System.out.println(wage_account.getBalance());
+                    default -> System.out.println("This methode is not available");
                 }
             }
         } while (amount != 0);
-        System.out.println("Final balance: " + lohnkonto.getBalance());
+        System.out.println("Final balance: " + wage_account.getBalance());
     }
 }
