@@ -4,6 +4,7 @@ public class Start {
     static Scanner myScanner = new Scanner(System.in);
     public static void main(String[] args) {
         Competition c = new Competition("First Race");
+
         Person person1 = new Person("Esa", "Koch", "Switzerland");
         Person person2 = new Person("Nasir", "Frame", "Italy");
         Person person3 = new Person("Rida", "Jacobson", "Germany");
@@ -16,6 +17,11 @@ public class Start {
         Ship ship4 = new Ship(4,"Golly Rogers");
         Ship ship5 = new Ship(5,"Fontaine");
 
+        ship1.setOwner(person1);
+        ship2.setOwner(person2);
+        ship3.setOwner(person3);
+        ship4.setOwner(person4);
+        ship5.setOwner(person5);
 
         c.addShip(ship1);
         c.addShip(ship2);

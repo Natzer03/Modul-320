@@ -3,7 +3,6 @@ public class Person {
     private String lastName;
     private String residence;
 
-    public Person(){}
     public Person(String firstName, String lastName, String residence){
         this.firstName = firstName;
         this.lastName = lastName;

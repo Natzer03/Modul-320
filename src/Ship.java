@@ -29,6 +29,7 @@ public class Ship {
     }
 
     public void setShipNumber(int shipNumber) {
+
         this.shipNumber = shipNumber;
     }
 
@@ -36,10 +37,11 @@ public class Ship {
         return shipTime;
     }
 
-    public Person getOwner(){
+    public Person getOwner() {
         return owner;
     }
-    public void setOwner(Person owner){
+
+    public void setOwner(Person owner) {
         this.owner = owner;
     }
 }
