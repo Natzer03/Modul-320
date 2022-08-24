@@ -4,7 +4,9 @@ public class AccountApplication {
     static Scanner myScanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Account wage_account = new Account();
+        System.out.println("To start with an specific start balance please enter a number, else enter 0(zero).");
+        double startBalance = myScanner.nextDouble();
+        Account wage_account = new Account(startBalance);
         System.out.println("Welcome to the account application");
         int amount;
         do {
