@@ -4,7 +4,7 @@ public class Competition {
     private String competitionName;
     /*private Ship[] ships = new Ship[5];*/
 
-    private ArrayList<Ship> list = new ArrayList<Ship>();
+    private ArrayList<Ship1> list = new ArrayList<Ship1>();
     private Person[] owner = new Person[5];
     private int counterOFShips = 0;
 
@@ -15,7 +15,7 @@ public class Competition {
         competitionName = name;
     }
 
-    public void addShip(Ship ship) {
+    public void addShip(Ship1 ship) {
         /*this.ships[counterOFShips] = ship;*/
         list.add(counterOFShips,ship);
         counterOFShips++;
@@ -41,7 +41,7 @@ public class Competition {
 
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i) != null) {
-                Ship s = list.get(i);
+                Ship1 s = list.get(i);
                 s.race();
             }
         }
@@ -58,7 +58,7 @@ public class Competition {
 
     public void printResult() {
         System.out.println("Wettkampf: " + competitionName);
-        for (Ship s : list) {
+        for (Ship1 s : list) {
             if (s != null) {
                 String ownerOutput = " Besitzer: ";
 

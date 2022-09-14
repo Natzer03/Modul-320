@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Start {
     static Scanner myScanner = new Scanner(System.in);
     public static void main(String[] args) {
-        Competition c = new Competition("First Race");
+        Competition1 c = new Competition1("First Race");
 
         Person person1 = new Person("Esa", "Koch", "Switzerland");
         Person person2 = new Person("Nasir", "Frame", "Italy");
@@ -12,12 +12,12 @@ public class Start {
         Person person5 = new Person("Heidi", "Dean", "Bhutan");
         Person person6 = new Person("Enrico", "Proietto", "Switzerland");
 
-        Ship ship1 = new Ship(1,"Alinghi");
-        Ship ship2 = new Ship(2,"Red Baron");
-        Ship ship3 = new Ship(3,"Blue Lagoon");
-        Ship ship4 = new Ship(4,"Golly Rogers");
-        Ship ship5 = new Ship(5,"Fontaine");
-        Ship ship6 = new Ship(6,"Natzership");
+        Ship1 ship1 = new Ship1(1,"Alinghi");
+        Ship1 ship2 = new Ship1(2,"Red Baron");
+        Ship1 ship3 = new Ship1(3,"Blue Lagoon");
+        Ship1 ship4 = new Ship1(4,"Golly Rogers");
+        Ship1 ship5 = new Ship1(5,"Fontaine");
+        Ship1 ship6 = new Ship1(6,"Natzership");
 
         ship1.setOwner(person1);
         ship2.setOwner(person2);
