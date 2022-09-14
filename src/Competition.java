@@ -4,7 +4,7 @@ public class Competition {
     private String competitionName;
     /*private Ship[] ships = new Ship[5];*/
 
-    private ArrayList<Ship1> list = new ArrayList<Ship1>();
+   // private ArrayList<Ship1> list = new ArrayList<Ship1>();
     private Person[] owner = new Person[5];
     private int counterOFShips = 0;
 
@@ -15,11 +15,11 @@ public class Competition {
         competitionName = name;
     }
 
-    public void addShip(Ship1 ship) {
-        /*this.ships[counterOFShips] = ship;*/
+    /*public void addShip(Ship1 ship) {
+        *//*this.ships[counterOFShips] = ship;*//*
         list.add(counterOFShips,ship);
         counterOFShips++;
-    }
+    } */
 
     public String getCompetitionName() {
         return competitionName;
@@ -29,15 +29,15 @@ public class Competition {
         this.competitionName = competitionName;
     }
 
-    public ArrayList getShips() {
+    /*public ArrayList getShips() {
         return list;
-    }
+    }*/
 
     /*public void setShips(Ship[] ships) {
         list.set(ships) = ships;
     }*/
 
-    public void start() {
+   /* public void start() {
 
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i) != null) {
@@ -53,10 +53,10 @@ public class Competition {
                 o.getResidence();
             }
         }
-    }
+    }*/
 
 
-    public void printResult() {
+   /* public void printResult() {
         System.out.println("Wettkampf: " + competitionName);
         for (Ship1 s : list) {
             if (s != null) {
@@ -71,5 +71,5 @@ public class Competition {
                         "Schiff Nr: " + s.getShipNumber() + " Name: " + s.getShipName() + ownerOutput + " Zeit: " + s.getShipTime());
             }
         }
-    }
+    }*/
 }

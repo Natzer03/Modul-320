@@ -10,7 +10,10 @@ public class Car {
         this.price = price;
     }
 
-    protected double getCarPrice() {
+    public double getPrice() {
         return price;
+    }
+    public String getModel(){
+        return model;
     }
 }

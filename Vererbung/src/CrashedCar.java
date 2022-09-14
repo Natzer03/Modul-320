@@ -9,8 +9,8 @@ public class CrashedCar extends Car {
 
     public double getPrice() {
         return switch (damageLevel) {
-            case 0 -> getCarPrice() - (getCarPrice() / 10);
-            case 1 -> getCarPrice() - (getCarPrice() / 2);
+            case 0 -> super.getPrice() - (super.getPrice() / 10);
+            case 1 -> super.getPrice() - (super.getPrice() / 2);
             default -> 0;
         };
     }

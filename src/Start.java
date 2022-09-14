@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Start {
-    static Scanner myScanner = new Scanner(System.in);
+    /*static Scanner myScanner = new Scanner(System.in);
     public static void main(String[] args) {
         Competition1 c = new Competition1("First Race");
 
@@ -36,5 +36,5 @@ public class Start {
         c.start();
 
         c.printResult();
-    }
+    }*/
 }
