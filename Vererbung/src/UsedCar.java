@@ -7,7 +7,7 @@ public class UsedCar extends Car {
     }
 
     public double getPrice() {
-        return super.getPrice() - (mileage * (super.getPrice() * 0.0005 / 100));
+        return super.price - (mileage * (super.price * 0.0005 / 100));
     }
 
     public int getMileage() {

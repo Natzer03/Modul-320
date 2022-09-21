@@ -1,19 +1,10 @@
-
-
-public class Car {
+public abstract class Car {
     private String model;
-    private double price;
-
-
+    protected double price;
     public Car(String model, double price) {
         this.model = model;
         this.price = price;
     }
-
-    public double getPrice() {
-        return price;
-    }
-    public String getModel(){
-        return model;
-    }
+    public abstract double getPrice();
+    public String getModel(){ return model; }
 }
